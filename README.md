@@ -1,4 +1,4 @@
-# GuiConnec+ now Opensourced !
+# GuiConnec+ now OpenSourced !
 
 ![banner](proto_banner_playstore.png)
 __________
