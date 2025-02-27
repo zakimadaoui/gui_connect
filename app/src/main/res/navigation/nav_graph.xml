@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.zmdev.protoplus.Fragments.HomeFragment"
+        tools:layout="@layout/fragment_home"
+        android:label="HomeFragment">
+        <action
+            android:id="@+id/home_to_terminal"
+            app:destination="@id/terminalFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/activity_exit_anim"
+            app:popUpTo="@id/homeFragment" />
+        <action
+            android:id="@+id/home_to_projects"
+            app:destination="@id/projectsFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/activity_exit_anim" />
+        <action
+            android:id="@+id/action_home_connect"
+            app:destination="@id/connectionFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/activity_exit_anim" />
+        <action
+            android:id="@+id/action_home_to_guide"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/activity_exit_anim"
+            app:destination="@id/guideFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/terminalFragment"
+        android:name="com.zmdev.protoplus.Fragments.TerminalFragment"
+        tools:layout="@layout/fragment_terminal"
+        android:label="TerminalFragment" />
+    <fragment
+        android:id="@+id/projectsFragment"
+        tools:layout="@layout/page_projects"
+        android:name="com.zmdev.protoplus.Fragments.ProjectsFragment"
+        android:label="ProjectsFragment" >
+        <action
+            android:id="@+id/show_project_commands_action"
+            app:destination="@id/addCommandsFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/open_gui_controller_action"
+            app:destination="@id/guiControllerFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/new_project_action"
+            app:destination="@id/addProjectFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right">
+            <argument
+                android:name="new_project"
+                android:defaultValue="true" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/addCommandsFragment"
+        tools:layout="@layout/page_add_commands"
+        android:name="com.zmdev.protoplus.Fragments.AddCommandsFragment"
+        android:label="AddCommandsFragment" >
+        <argument
+            android:name="projectName"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <action
+            android:id="@+id/link_to_gui_action"
+            app:destination="@id/guiCreatorFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <dialog
+        android:id="@+id/addProjectFragment"
+        android:name="com.zmdev.protoplus.Fragments.AddProjectBottomSheet"
+        tools:layout="@layout/page_add_project"
+        android:label="AddProjectFragment" >
+    </dialog>
+    <fragment
+        android:id="@+id/guiCreatorFragment"
+        tools:layout="@layout/fragment_canvas"
+        android:name="com.zmdev.protoplus.Fragments.GuiEditorFragment"
+        android:label="GuiCreatorFragment" >
+        <action
+            android:id="@+id/action_editor_to_gui"
+            app:destination="@id/guiControllerFragment"
+            app:enterAnim="@anim/slide_out_left"
+            app:exitAnim="@anim/slide_in_right"
+            app:popEnterAnim="@anim/slide_out_right"
+            app:popExitAnim="@anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/guiControllerFragment"
+        tools:layout="@layout/fragment_gui_controller"
+        android:name="com.zmdev.protoplus.Fragments.GuiFragment"
+        android:label="GuiControllerFragment" >
+        <action
+            android:id="@+id/edit_controller_action"
+            app:destination="@id/guiCreatorFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/connectionFragment"
+        tools:layout="@layout/fragment_connection"
+        android:name="com.zmdev.protoplus.Fragments.ConnectionFragment"
+        android:label="BluetoothPageFragment" />
+    <fragment
+        android:id="@+id/guideFragment"
+        android:name="com.zmdev.protoplus.Fragments.SettingsFragment"
+        android:label="GuideFragment" />
+</navigation>

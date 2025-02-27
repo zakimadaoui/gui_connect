@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/bordered_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/card_gb_bordered"
+        android:backgroundTint="@color/app_color"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <RadioButton
+                android:id="@+id/cnst_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:checked="true"
+                android:clickable="false"
+                android:text="Constant" />
+
+            <RadioButton
+                android:id="@+id/var_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:clickable="false"
+                android:text="Variable" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/def_val_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/card_bg_material_shadow"
+            android:ems="10"
+            android:hint="VALUE"
+            android:inputType="text"
+            android:maxLength="27"
+            android:padding="10dp"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/param_hint_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/card_bg_material_shadow"
+            android:ems="10"
+            android:hint="LABEL (ex: xPos, motorNbr ...)"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textSize="14dp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/param_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="?android:attr/colorBackground"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:text="Parameter 1"
+        android:textColor="@color/app_color"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/bordered_layout"
+        app:layout_constraintStart_toStartOf="@+id/bordered_layout"
+        app:layout_constraintTop_toTopOf="@+id/bordered_layout" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</merge>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/guide_tutos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/assistant"
+                android:padding="8dp"
+                android:text="Tutorials"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switch_interactive_tutos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:padding="16dp"
+                android:text="Enable interactive tutorials" />
+
+            <include layout="@layout/divider" />
+
+            <TextView
+                android:id="@+id/guide_app_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/assistant"
+                android:padding="8dp"
+                android:text="App description"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:autoLink="web"
+                android:fontFamily="@font/assistant"
+                android:gravity="fill_vertical"
+                android:linksClickable="true"
+                android:padding="10dp"
+                android:text="@string/app_desc"
+                android:textSize="16sp" />
+
+            <include layout="@layout/divider" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:autoLink="web"
+                android:fontFamily="@font/assistant"
+                android:gravity="fill_vertical"
+                android:linksClickable="true"
+                android:padding="10dp"
+                android:text="@string/checkout_yt"
+                android:textSize="16sp" />
+
+
+            <Button
+                android:id="@+id/button_youtube"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="8dp"
+                android:backgroundTint="#EF5350"
+                android:text="@string/opn_yt" />
+
+            <include layout="@layout/divider" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:autoLink="web"
+                android:fontFamily="@font/assistant"
+                android:gravity="fill_vertical"
+                android:linksClickable="true"
+                android:padding="10dp"
+                android:text="@string/checkout_lib_git"
+                android:textSize="16sp" />
+
+
+            <Button
+                android:id="@+id/button_github"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="8dp"
+                android:backgroundTint="#313131"
+                android:text="@string/open_git" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

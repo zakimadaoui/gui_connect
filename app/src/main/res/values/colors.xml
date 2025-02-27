@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+
+    <color name="card_color_light">#FFFFFF</color>
+    <color name="card_color_dark">#323337</color>
+    <color name="card_color_variant_light">#F2F2F2</color>
+    <color name="card_color_variant_dark">#252629</color>
+
+    <color name="background_color_light">#FFFFFF</color>
+    <color name="background_color_dark">#1f1f1f</color>
+    <color name="background_color_variant_light">#F2F2F2</color> <!-- for edit texts and similar -->
+    <color name="background_color_variant_dark">#1a1a1a</color> <!-- for edit texts and similar -->
+
+    <color name="canvas_dot_color_light">#4D7FC8</color>
+    <color name="canvas_dot_color_dark">#CD4D7FC8</color>
+    <color name="canvas_pointer_color_light">#E3751B</color>
+    <color name="canvas_pointer_color_dark">#A381DF</color>
+    <color name="canvas_selector_color_light">#0075FF</color>
+    <color name="canvas_selector_color_dark">#9575CD</color>
+
+    <color name="widget_shadow_color_light">#AB969696</color>
+    <color name="widget_shadow_color_dark">#AB464646</color>
+    <color name="widget_back_shadow_color_light">#DCDCDC</color>
+    <color name="widget_back_shadow_color_dark">#3E3F43</color>
+
+    <!--    Orange scheme -->
+<!--    <color name="app_color">#FF9800</color>-->
+<!--    <color name="app_color_dark">#DC8300</color>-->*
+
+<!--    Get it done  Blue scheme -->
+<!--    <color name="app_color">#6495F6</color>-->
+<!--    <color name="app_color_dark">#547CCD</color>-->
+
+
+<!--    Blue scheme -->
+    <color name="app_color">#2196F3</color>
+    <color name="app_color_dark">#C42196F3</color>
+
+    <color name="main_gradient_top">#3F51B5</color>
+    <color name="main_gradient_bottom">#00BCD4</color>
+
+<!--    Green scheme -->
+<!--    <color name="app_color">#009688</color>-->
+<!--    <color name="app_color_dark">#007167</color>-->
+    <color name="console_grey">#373737</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#F44336</color>
+    <color name="azure">#2196F3</color>
+    <color name="light_blue">#64B5F6</color>
+
+<!--    Command colors -->
+    <color name="opcode_color">#64B5F6</color>
+    <color name="light_yellow">#FFCC80</color>
+    <color name="light_red">#E66868</color>
+    <color name="greeen">#4DB6AC</color>
+
+
+    <color name="toggle_grey">#6B6B6B</color>
+
+
+
+    <color name="flat_shadow">#F2F2F2</color>
+    <color name="flat_shadow_on_dark">#1B1B1B</color>
+    <color name="spotlightBackground">#DF000000</color>
+</resources>

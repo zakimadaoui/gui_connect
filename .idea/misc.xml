@@ -1,0 +1,38 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../../layout/custom_preview.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_add_gradient.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_baseline_code_24.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_info.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_live_help.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_next.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/dialog_upgrade_pro.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/dialog_widget_docs.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/dialog_widget_preferences.xml" value="0.17119565217391305" />
+        <entry key="app/src/main/res/layout/fragment_gui_controller.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_guide.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/item_widget.xml" value="0.22708333333333333" />
+        <entry key="app/src/main/res/layout/page_new_command.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/page_projects.xml" value="0.264945652173913" />
+        <entry key="app/src/main/res/layout/preference_range.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/sensor_acc_layout.xml" value="0.19293478260869565" />
+        <entry key="app/src/main/res/layout/sensor_flux_layout.xml" value="0.19293478260869565" />
+        <entry key="app/src/main/res/layout/sensor_gravity_layout.xml" value="0.19293478260869565" />
+        <entry key="app/src/main/res/layout/sensor_gyro_layout.xml" value="0.19293478260869565" />
+        <entry key="app/src/main/res/layout/sensor_light_layout.xml" value="0.19293478260869565" />
+        <entry key="app/src/main/res/layout/tutorial_new_command.xml" value="0.22708333333333333" />
+        <entry key="app/src/main/res/layout/view_parameter.xml" value="0.33" />
+        <entry key="app/src/main/res/xml/root_prefereces.xml" value="0.22" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="jbr-21" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

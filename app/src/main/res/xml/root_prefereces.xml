@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="App settings">
+        <SwitchPreferenceCompat
+            app:title="Dark mode"
+            android:defaultValue="false"
+            android:icon="@drawable/ic_baseline_dark_mode_24"
+            app:key="dark_mode"
+            app:summaryOff="dark mode OFF"
+            app:summaryOn="dark mode ON"
+            />
+
+        <SwitchPreferenceCompat
+            android:key="interactive_tuto_pref"
+            app:title="Enable interactive tutorial"
+            android:defaultValue="false"
+            android:icon="@drawable/ic_outline_menu_book_24"
+            app:summary="Show details about the different parts of the app"
+            />
+    </PreferenceCategory>
+
+
+    <PreferenceCategory app:title="Other">
+        <Preference
+            android:icon="@drawable/ic_outline_menu_book_24"
+            android:key="tutos_pref"
+            app:summary="tutorials and examples on how to get started with GuiConnect+"
+            app:title="Open app tutorials &amp; examples" />
+        <Preference
+            android:icon="@drawable/ic_outline_book_24"
+            android:key="licenses_pref"
+            app:title="Open source licenses" />
+
+        <Preference
+            android:icon="@drawable/heart_svgrepo_com"
+            android:key="tip_pref"
+            android:title="Support the App"
+            android:summary="If you find this app useful, kindly consider supporting its development" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

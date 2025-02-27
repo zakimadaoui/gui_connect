@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/assistant_semibold"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Pro upgrade"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:drawableStart="@drawable/ic_check_circle"
+        android:drawablePadding="6dp"
+        android:fontFamily="@font/assistant"
+        android:gravity="center_vertical"
+        android:padding="4dp"
+        android:text="Unlimited projects" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:drawableStart="@drawable/ic_check_circle"
+        android:drawablePadding="6dp"
+        android:fontFamily="@font/assistant"
+        android:gravity="center_vertical"
+        android:padding="4dp"
+        android:text="Scollable graphical interfaces (more widget space per interface)" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:drawableStart="@drawable/ic_check_circle"
+        android:drawablePadding="6dp"
+        android:fontFamily="@font/assistant"
+        android:gravity="center_vertical"
+        android:padding="4dp"
+        android:text="Unlimited terminal sessions" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:drawableStart="@drawable/ic_check_circle"
+        android:drawablePadding="6dp"
+        android:fontFamily="@font/assistant"
+        android:gravity="center_vertical"
+        android:padding="4dp"
+        android:text="Unlimited devices" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:drawableStart="@drawable/ic_check_circle"
+        android:drawablePadding="6dp"
+        android:fontFamily="@font/assistant"
+        android:gravity="center_vertical"
+        android:padding="4dp"
+        android:text="Scan for bluetooth devices directly from app" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:drawableStart="@drawable/ic_check_circle"
+        android:drawablePadding="6dp"
+        android:fontFamily="@font/assistant"
+        android:gravity="center_vertical"
+        android:padding="4dp"
+        android:text="Color picker, keypad, orientation sensor and other widgets.." />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:drawableStart="@drawable/ic_check_circle"
+        android:drawablePadding="6dp"
+        android:fontFamily="@font/assistant"
+        android:gravity="center_vertical"
+        android:padding="4dp"
+        android:text="Dark theme" />
+
+    <Button
+        android:id="@+id/upgrade_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#FFD54F"
+        android:text="Upgrade " />
+
+    <Button
+        android:id="@+id/close_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#EF9A9A"
+        android:text="Close" />
+
+</LinearLayout>

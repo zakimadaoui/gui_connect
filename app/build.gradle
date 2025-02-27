@@ -1,0 +1,90 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.android.gms.oss-licenses-plugin'
+}
+
+android {
+    signingConfigs {
+        release {
+        }
+    }
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.zmdev.protoplus"
+        minSdkVersion 28
+        targetSdk 35
+        versionCode 4
+        versionName '1.1'
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_17
+        apply plugin: "androidx.navigation.safeargs"
+    }
+    packagingOptions {
+        resources {
+            excludes += ['META-INF/DEPENDENCIES', 'META-INF/LICENSE', 'META-INF/LICENSE.txt', 'META-INF/license.txt', 'META-INF/NOTICE', 'META-INF/NOTICE.txt', 'META-INF/notice.txt', 'META-INF/ASL2.0']
+        }
+    }
+    namespace 'com.zmdev.protoplus'
+}
+
+dependencies {
+
+    implementation 'androidx.activity:activity:1.10.1'
+    implementation 'androidx.fragment:fragment:1.8.6'
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
+    implementation 'androidx.gridlayout:gridlayout:1.0.0'
+    implementation 'com.google.android.gms:play-services-location:21.3.0'
+    implementation 'com.google.firebase:firebase-crashlytics-buildtools:3.0.3'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.2.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
+    implementation 'androidx.preference:preference:1.2.1'
+    implementation 'com.google.android.gms:play-services-oss-licenses:17.1.0'
+
+
+    //USB Serial
+    implementation 'com.github.felHR85:UsbSerial:6.1.0'
+
+    //navigation components
+    def nav_version = "2.7.7"
+    implementation "androidx.navigation:navigation-fragment:2.8.8"
+    implementation "androidx.navigation:navigation-ui:2.8.8"
+
+    //room
+    def room_version = "2.6.1"
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+
+    //extra
+    implementation 'com.google.code.gson:gson:2.12.1'
+
+    //color picker library
+    implementation 'com.jaredrummler:colorpicker:1.1.0'
+
+    //knob
+    implementation 'com.sdsmdg.harjot:croller:1.0.7'
+
+    //icon dialog
+    implementation 'com.maltaisn:icondialog:3.3.0'
+    implementation 'com.maltaisn:iconpack-community-material:5.3.45'
+
+    //user tutorials
+    implementation 'com.getkeepsafe.taptargetview:taptargetview:1.15.0'
+
+    //material stuff
+    implementation 'com.google.android.material:material:1.12.0'
+}

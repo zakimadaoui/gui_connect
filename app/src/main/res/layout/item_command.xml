@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/command_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="@drawable/card_bg"
+    android:backgroundTint="@color/console_grey"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/command_item_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="none"
+        android:fontFamily="monospace"
+        android:padding="20dp"
+        android:singleLine="true"
+        android:text="Param"
+        android:textColor="#FBFBFB" />
+
+
+</LinearLayout>
+
+
+

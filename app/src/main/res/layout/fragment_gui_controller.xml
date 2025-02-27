@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    tools:context=".Fragments.GuiEditorFragment">
+
+    <RelativeLayout
+        android:id="@+id/controller_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="?android:attr/colorBackground"
+        android:elevation="5dp">
+
+        <ImageButton
+            android:id="@+id/controller_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:paddingStart="15dp"
+            android:paddingTop="7dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="7dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_add"
+            app:tint="@color/app_color" />
+
+        <ImageButton
+            android:id="@+id/controller_show_command"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/edit_controller_btn"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:paddingStart="15dp"
+            android:paddingTop="7dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="7dp"
+            app:srcCompat="@drawable/ic_commands"
+            app:tint="@color/app_color" />
+
+        <ImageButton
+            android:id="@+id/controller_tutorials_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/controller_back"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:paddingStart="15dp"
+            android:paddingTop="7dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="7dp"
+            app:srcCompat="@drawable/ic_movie"
+            app:tint="@color/app_color" />
+
+        <ImageButton
+            android:id="@+id/controller_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:paddingStart="15dp"
+            android:paddingTop="7dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="7dp"
+            app:srcCompat="@drawable/abc_vector_test"
+            app:tint="@color/app_color" />
+
+        <ImageButton
+            android:id="@+id/edit_controller_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:paddingStart="15dp"
+            android:paddingTop="7dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="7dp"
+            app:srcCompat="@drawable/ic_edit2"
+            app:tint="@color/app_color" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/command_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/controller_app_bar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:padding="10dp"
+        android:text="This displays the recent executed command"
+        android:visibility="gone" />
+
+    <!--    <ScrollView-->
+    <!--        android:id="@+id/gui_creator_scroller"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_below="@+id/app_bar"-->
+    <!--        android:layout_marginTop="0dp">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:orientation="vertical">-->
+    <com.zmdev.protoplus.CustomViews.ProtoSquareGrid
+        android:id="@+id/square_grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/command_txt"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible" />
+
+    <!--    <RelativeLayout-->
+    <!--        android:id="@+id/controller_layout"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_below="@id/command_txt"-->
+    <!--        android:layout_alignParentStart="true"-->
+    <!--        android:layout_alignParentEnd="true" -->
+    <!--        />-->
+
+    <com.zmdev.protoplus.CustomViews.MyScrollView
+        android:id="@+id/gui_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/command_txt"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="#FFFFFF">
+
+        <RelativeLayout
+            android:id="@+id/controller_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.zmdev.protoplus.CustomViews.MyScrollView>
+
+    <!--        </LinearLayout>-->
+    <!--    </ScrollView>-->
+
+</RelativeLayout>

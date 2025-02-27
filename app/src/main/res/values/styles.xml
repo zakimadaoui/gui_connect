@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ActivityDialogThemeLight" parent="Theme.Proto">
+        <item name="android:windowAnimationStyle">@style/dialogSlidUpDownAnimation</item>
+    </style>
+
+    <style name="ActivityDialogThemeDark" parent="Theme.ProtoDark">
+        <item name="android:windowAnimationStyle">@style/dialogSlidUpDownAnimation</item>
+    </style>
+
+    <style name="dialogSlidUpDownAnimation" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+
+    <style name="dialogPopInOutAnimation" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+
+    <style name="newTheme" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+
+    <style name="bottomSheetAnim" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+
+
+    <style name="AlertDialogLightTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/card_bg</item>
+        <item name="android:windowAnimationStyle">@style/newTheme</item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/dialogButtonStyle</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/dialogButtonStyle</item>
+        <item name="android:buttonBarNeutralButtonStyle">@style/dialogButtonStyle</item>
+    </style>
+
+    <style name="AlertDialogDarkTheme" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/card_bg</item>
+        <item name="android:windowAnimationStyle">@style/newTheme</item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/dialogButtonStyle</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/dialogButtonStyle</item>
+        <item name="android:buttonBarNeutralButtonStyle">@style/dialogButtonStyle</item>
+    </style>
+
+        <style name="BottomSheetThemeLight" parent="Theme.MaterialComponents.Light.BottomSheetDialog">
+        <item name="android:statusBarColor">#00050505</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="android:backgroundDimAmount">0.5</item>
+    </style>
+
+    <style name="BottomSheetThemeDark" parent="Theme.MaterialComponents.BottomSheetDialog">
+        <item name="android:statusBarColor">#00050505</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:backgroundTint">@color/background_color_dark</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="android:backgroundDimAmount">0.5</item>
+    </style>
+
+    <style name="dialogButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/app_color</item>
+    </style>
+
+    <style name="MyCardViewStyleLight">
+        <item name="cardBackgroundColor">@color/card_color_light</item>
+    </style>
+
+    <style name="MyCardViewStyleDark">
+        <item name="cardBackgroundColor">@color/card_color_dark</item>
+    </style>
+
+</resources>

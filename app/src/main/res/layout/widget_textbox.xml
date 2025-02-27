@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/text_box_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@drawable/card_gb_bordered"
+    android:backgroundTint="@color/app_color"
+    android:elevation="4dp">
+
+    <EditText
+        android:id="@+id/text_box_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:background="#00C56969"
+        android:ems="10"
+        android:hint="Text to send"
+        android:inputType="textMultiLine|text"
+        android:padding="16dp" />
+
+    <ImageButton
+        android:id="@+id/text_box_send_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="16dp"
+        app:srcCompat="@drawable/ic_baseline_send_24"
+        app:tint="@color/app_color" />
+</LinearLayout>

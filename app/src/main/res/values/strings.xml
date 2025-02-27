@@ -1,0 +1,193 @@
+<resources>
+    <string name="app_name">GuiConnect+</string>
+    <string name="no_connection">No Connection found !</string>
+    <string name="btn_txt_error">Must fill button text field</string>
+    <string name="tap_to_choose_associated_command">Tap to choose associated command</string>
+    <string name="command_label">Command:</string>
+    <string name="size_label">Size:</string>
+    <string name="custom">Custom</string>
+    <string name="wrap_content">Wrap content</string>
+    <string name="fit_screen_width">Fit screen width</string>
+    <string name="color_label">Color:</string>
+    <string name="primary_color_label">Primary color:</string>
+    <string name="secondary_color_label">Secondary color:</string>
+    <string name="text_label">Label:</string>
+    <string name="show_percentage">Show percentage</string>
+    <string name="label">Label</string>
+    <string name="orientation_label">Orientation:</string>
+    <string name="button_cap">BUTTON</string>
+    <string name="please_wait">\"Please wait... \"</string>
+    <string name="saving_gui">Saving GUI ...</string>
+    <string name="del_widget">Delete widget</string>
+    <string name="del_widget_dilog">Would you like to delete this widget ?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="range_label">Range:</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="max">Max</string>
+    <string name="min">Min</string>
+    <string name="invalid_range">Invalid range !</string>
+    <string name="new_widget">New Widget</string>
+    <string name="edit_widget">Edit Widget</string>
+    <string name="icon_label">Icon:</string>
+    <string name="show_text_to_the_right">Show text to the right</string>
+    <string name="show_xy">Show XY values</string>
+    <string name="details">Details:</string>
+    <string name="frequency">Sampling period:</string>
+    <string name="tutorial_command_name">The command name is what allows you to distinguish a
+        command from another. For example the command with \'command name = MOVE\' will be responsible
+        for sending a signal to move a motor. Also using a single character as a command name is considered
+        to be a good practice since it takes less transfer time and can be handled easily.</string>
+    <string name="parameters">Parameters:</string>
+    <string name="command_name">Command name:</string>
+    <string name="tutorial_parameters">
+        There are two types of parameters:\n
+        <b>constant parameters</b>: are meant to be used by the developer as flags.
+         You can use the same command name for different commands and use flags to distinguish
+        between them.\n
+        <b>variable parameters</b>: the number of variable parameters depends on the widget that
+        will be linked to it. For example a Slider widget requires a single variable parameter for
+        sending its variable value.</string>
+    <string name="tuto_projects">Manage your projects, create, access and edit your amazing GUIs !</string>
+    <string name="tuto_connections">Connect to your micro-controller via Bluetooth, UART or even TCP/IP</string>
+    <string name="tuto_terminal">Test your connection and debug your program using the built-in Terminal</string>
+    <string name="tuto_settings">App settings, tutorials and examples and pro version upgrade</string>
+    <string name="tuto_lib_fab">App companion library documentation, demos, and tutorials</string>
+    <string name="tuto_add_project">Create your first project !</string>
+    <string name="tuto_editor">Open the editor to Add and Edit Widgets</string>
+    <string name="tuto_add_widgets">Add new widgets and components</string>
+    <string name="tuto_edit_widgets">Edit existing widgets</string>
+    <string name="tuto_remove_widgets">Remove existing widgets</string>
+    <string name="tuto_save_gui">Save your changes</string>
+    <string name="refreshing">Refreshing Widgets ...</string>
+    <string name="saving_states">Saving widgets states ...</string>
+    <string name="tap_to_view_details">Tap here to view widget\'s details</string>
+    <string name="edit_project_name">Edit project name</string>
+    <string name="edit">Edit</string>
+    <string name="delete_project_text">Would you like to delete this project ?</string>
+    <string name="delete_project_title">Delete Project</string>
+    <string name="delete_command_title">Delete Command</string>
+    <string name="delete_command_text">Would you like to delete this command ? Any widget linked to this command will be linked back to its default command !</string>
+    <string name="delete">DELETE</string>
+    <string name="warning_edit"><b>WARNING</b>: Changing the number of variable parameters will force the widget linked to this command to reset to its default command.</string>
+
+
+    <!-- Widgets Documentation Strings    -->
+
+    <!-- Accelerometer -->
+    <string name="doc_accelerometer_desc">An accelerometer block sends the acceleration on X Y and Z axis as FLOAT, and that is based on the sampling period given by the user. The default sampling period is 100 000 us or 100ms</string>
+    <string name="doc_accelerometer_reqs">This widget requires a command that has <b>3 variable parameters</b> to insert the 3 FLOAT values in them.</string>
+    <string name="doc_accelerometer_usage">you should use <b>GCH_GetParamAsFloat(&amp;handle,index)</b> in your code to read the X Y or Z parameters correctly</string>
+
+    <!-- Gyroscope -->
+    <string name="doc_gyro_desc">A gyro block sends the rate of rotation around X Y and Z axis as FLOAT, and that is based on the sampling period given by the user. The default sampling period is 100 000 us or 100ms</string>
+    <string name="doc_gyro_reqs">This widget requires a command that has <b>3 variable parameters</b> to insert the 3 FLOAT values in them.</string>
+    <string name="doc_gyro_usage">you should use <b>GCH_GetParamAsFloat(&amp;handle,index)</b> in your code to read the X Y or Z parameters correctly</string>
+
+    <!-- Orientation -->
+    <string name="doc_orientation_desc">An orientation block sends the orientation of the device (azimuth, pitch and roll) as FLOATs, and that is based on the sampling period given by the user. The default sampling period is 100 000 us or 100ms</string>
+    <string name="doc_orientation_reqs">This widget requires a command that has <b>3 variable parameters</b> to insert the 3 FLOAT values in them.</string>
+    <string name="doc_orientation_usage">you should use <b>GCH_GetParamAsFloat(&amp;handle,index)</b> in your code to read the azimuth, pitch and roll parameters correctly</string>
+
+    <!-- Gravity -->
+    <string name="doc_gravity_desc">A gravity block sends the force of gravity along X Y and Z axis as FLOAT, and that is based on the sampling period given by the user. The default sampling period is 100 000 us or 100ms</string>
+    <string name="doc_gravity_reqs">This widget requires a command that has <b>3 variable parameters</b> to insert the 3 FLOAT values in them.</string>
+    <string name="doc_gravity_usage">you should use <b>GCH_GetParamAsFloat(&amp;handle,index)</b> in your code to read the X Y or Z parameters correctly</string>
+
+    <!-- Magnetic field -->
+    <string name="doc_magnet_desc">A magnetic field block sends the geomagnetic field strength along  X Y and Z axis as FLOAT, and that is based on the sampling period given by the user. The default sampling period is 100 000 us or 100ms</string>
+    <string name="doc_magnet_reqs">This widget requires a command that has <b>3 variable parameters</b> to insert the 3 FLOAT values in them.</string>
+    <string name="doc_magnet_usage">you should use <b>GCH_GetParamAsFloat(&amp;handle,index)</b> in your code to read the X Y or Z parameters correctly</string>
+
+    <!-- Proximity -->
+    <string name="doc_proximity_desc">A proximity block sends a 1 when an object is close from the phone\'s proximity sensor (a couple of centimeters). An INTEGER value of 0 is sent otherwise, and all of this is based on the sampling period given by the user. The default sampling period is 100 000 us or 100ms </string>
+    <string name="doc_proximity_reqs">This widget requires a command that has <b>1 variable parameter</b>. The value of proximity will be inserted in that variable parameter..</string>
+    <string name="doc_proximity_usage">You should use <b>GCH_GetStrCommandName(&amp;handle,index)</b> or <b>GCH_GetCharCommandName(&amp;handle,index)</b> to read the command name. Also, you must use <b>GCH_GetParamAsInt(&amp;handle,index)</b> to read the value of the sensor</string>
+
+    <!-- Light -->
+    <string name="doc_light_desc">A light sensor block sends the Illuminance of the environment in <b>lx</b> as INTEGER, and that is based on the sampling period given by the user. The default sampling period is 100 000 us or 100ms</string>
+    <string name="doc_light_reqs">This widget requires a command that has <b>1 variable parameter</b> to insert the INTEGER value.</string>
+    <string name="doc_light_usage">you should use <b>GCH_GetParamAsInt(&amp;handle,index)</b> in your code to read the Illuminance parameter correctly</string>
+
+
+    <!-- Button (Fab and normal) -->
+    <string name="doc_button_desc">A button simply sends a command when it is clicked</string>
+    <string name="doc_button_reqs">This widget requires a command that has <b>0 variable parameters</b>.</string>
+    <string name="doc_button_usage">You should use <b>GCH_GetStrCommandName(&amp;handle,index)</b> or <b>GCH_GetCharCommandName(&amp;handle,index)</b> to read the command name. Also, you can use <b>GCH_GetParamAsTYPE(&amp;handle,index)</b> to read the constant parameter in your commands (if any), the TYPE is the data type you intend to use for the parameter</string>
+
+    <!-- KeyPad -->
+    <string name="doc_keypad_desc">A keypad widget sends a command when one of its buttons is clicked. The variable sent will be a character.</string>
+    <string name="doc_keypad_reqs">This widget requires a command that has <b>1 variable parameters</b>.</string>
+    <string name="doc_keypad_usage">You should use <b>GCH_GetStrCommandName(&amp;handle,index)</b> or <b>GCH_GetCharCommandName(&amp;handle,index)</b> to read the command name. Also, you can use <b>GCH_GetParamAsChar(&amp;handle,index)</b> to read the variable parameter</string>
+
+
+    <!-- Slider -->
+    <string name="doc_slider_desc">A slider widget has a thumb that can be dragged left or right. An INTEGER value between MIN and MAX will be sent when the slider progress is changed</string>
+    <string name="doc_slider_reqs">This widget requires a command that has <b>1 variable parameter</b>. The progress of the slider will be inserted in the variable parameter whenever it is dragged.</string>
+    <string name="doc_slider_usage">You should use <b>GCH_GetStrCommandName(&amp;handle,index)</b> or <b>GCH_GetCharCommandName(&amp;handle,index)</b> to read the command name. Also, you must use <b>GCH_GetParamAsInt(&amp;handle,index)</b>  or <b>GCH_GetParamAsLong(&amp;handle,index)</b>to read the progress of the slider</string>
+
+    <!-- Knob -->
+    <string name="doc_knob_desc">A knob widget send a progress value when it is turned clockwise and counterclockwise. An INTEGER value between 0 and MAX will be sent when the Knob is turned</string>
+    <string name="doc_knob_reqs">This widget requires a command that has <b>1 variable parameter</b> to insert its progress into.</string>
+    <string name="doc_knob_usage">You should use <b>GCH_GetStrCommandName(&amp;handle,index)</b> or <b>GCH_GetCharCommandName(&amp;handle,index)</b> to read the command name. Also, you must use <b>GCH_GetParamAsInt(&amp;handle,index)</b>  or <b>GCH_GetParamAsLong(&amp;handle,index)</b>to read the progress of the knob</string>
+
+
+    <!-- Switch -->
+    <string name="doc_switch_desc">A switch widget is toggled when it is clicked. An INTEGER value of either 0 or 1 will be sent when the switch is pressed</string>
+    <string name="doc_switch_reqs">This widget requires a command that has <b>1 variable parameter</b>. The value of the switch will be inserted in that variable parameter whenever it is pressed. </string>
+    <string name="doc_switch_usage">You should use <b>GCH_GetStrCommandName(&amp;handle,index)</b> or <b>GCH_GetCharCommandName(&amp;handle,index)</b> to read the command name. Also, you must use <b>GCH_GetParamAsInt(&amp;handle,index)</b> to read the value of the switch</string>
+
+    <!-- Joystick -->
+    <string name="doc_joystick_desc">A joystick sends the XY values of the thumb as INTEGERS. The XY values range between 0 and 1024</string>
+    <string name="doc_joystick_reqs">This widget requires a command that has <b>2 variable parameters</b> to insert the XY values in them.</string>
+    <string name="doc_joystick_usage">You should use <b>GCH_GetStrCommandName(&amp;handle,index)</b> or <b>GCH_GetCharCommandName(&amp;handle,index)</b> to read the command name. Also, you must use <b>GCH_GetParamAsInt(&amp;handle,index)</b>  to read the XY values</string>
+
+    <!-- TouchPad -->
+    <string name="doc_touchpad_desc">A touchpad sends the touch XY values as a percentage</string>
+    <string name="doc_touchpad_reqs">This widget requires a command that has <b>2 variable parameters</b> to insert the XY values in them.</string>
+    <string name="doc_touchpad_usage">You should use <b>GCH_GetStrCommandName(&amp;handle,index)</b> or <b>GCH_GetCharCommandName(&amp;handle,index)</b> to read the command name. Also, you must use <b>GCH_GetParamAsFloat(&amp;handle,index)</b> to read the XY values correctly</string>
+
+
+    <!-- Direction buttons -->
+    <string name="doc_direction_desc">A Direction buttons widget sends the a character value depending on which one of the 4 buttons  is clicked. The CHARACTER value can be \'U\', \'D\', \'L\', or \'R\'</string>
+    <string name="doc_direction_reqs">This widget requires a command that has <b>1 variable parameter</b> to insert the CHARACTER value in it.</string>
+    <string name="doc_direction_usage">You should use <b>GCH_GetStrCommandName(&amp;handle,index)</b> or <b>GCH_GetCharCommandName(&amp;handle,index)</b> to read the command name. Also, you must use <b>GCH_GetParamAsChar(&amp;handle,index)</b> to read the value correctly</string>
+
+    <!-- ColorPicker -->
+    <string name="doc_color_picker_desc">A color picker widget sends the selected RGB value as a single INTEGER</string>
+    <string name="doc_color_picker_reqs">This widget requires a command that has <b>1 variable parameters</b> to insert the RGB value.</string>
+    <string name="doc_color_picker_usage">You should use <b>GCH_GetStrCommandName(&amp;handle,index)</b> or <b>GCH_GetCharCommandName(&amp;handle,index)</b> to read the command name. Also, you must use <b>GCH_GetParamAsInt(&amp;handle,index)</b> to read the RGB value correctly</string>
+
+    <!-- TextDisplay -->
+    <string name="doc_text_disp_desc">A Text display widget can be used to display some text sent from the connected device. The text sent to this widget must follow a specific format which will be discussed later in the \'usage section\'.</string>
+    <string name="doc_text_disp_reqs">This widget requires a command that has <b>0 variable parameters</b>. The <b>Command Name</b> will be used to identify this text display.</string>
+    <string name="doc_text_disp_usage">This widget doesn\'t need to be used with the app library. Instead the data that is sent to be displayed must follow a specific format. The format should be as follows: <b>\">command_name,text......<![CDATA[<]]>\"</b>. The character \'>\'
+    clears the previous text in the display and prepares it to receive new data. The character <![CDATA[\'<\']]> is used to terminate the current text</string>
+
+    <!-- TextBox -->
+    <string name="doc_text_edit_desc">A Text Edit widget can be used to send plain text to the connected device.</string>
+    <string name="doc_text_edit_reqs">This widget does not use commands.</string>
+    <string name="doc_text_edit_usage">Since this widget sends plain text, it cannot be used with the app\'s library !</string>
+    <string name="checkout_yt">Checkout our YouTube playlist on how to use GuiConnect+ and get your project started</string>
+    <string name="opn_yt">Open  YouTube tutorials</string>
+    <string name="checkout_lib_git">Checkout our Helper library and its full documentation on Github</string>
+    <string name="open_git">Open the helper library\'s github</string>
+    <string name="app_desc">
+        Whether you\'re a professional, a student, a teacher, or a hobbyist, GuiConnect+
+        provides the quickest way to set up a graphical interface and wirelessly communicate
+        with your microcontroller board regardless of platform (Arduino, ESP32, STM32…).\n\n
+
+        GuiConnect+ turns your Android phone into an I/O device by allowing you to build
+        highly customizable GUIs using drag-and-drop components. Custom commands allow
+        you to customize the data that these components send, and you can connect to your
+        embedded hardware via Bluetooth, UART, or TCP/IP. The app also gives you access
+        to your smartphone\'s sensors and other features enabling amazing applications.\n\n
+
+        Finally, this app comes with a C library that handles data reception and parsing
+        on the MCU side, allowing you to focus solely on the important aspects of your
+        project !
+    </string>
+
+
+</resources>

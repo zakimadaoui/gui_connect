@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:fontFamily="@font/assistant"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="UART configuration"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/uart_baudrate_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/card_bg_material_shadow"
+        android:ems="10"
+        android:hint="Baud rate (9600 by default)"
+        android:inputType="numberSigned"
+        android:padding="10dp"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/uart_data_bits_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/card_bg_material_shadow"
+        android:hint="Data bits (8 by default)"
+        android:padding="10dp"
+        app:drawableEndCompat="@drawable/ic_arrow_down"
+        app:drawableTint="#5A5A5A" />
+
+    <TextView
+        android:id="@+id/uart_parity_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/card_bg_material_shadow"
+        android:hint="Parity (NONE by default)"
+        android:padding="10dp"
+        app:drawableEndCompat="@drawable/ic_arrow_down"
+        app:drawableTint="#5A5A5A" />
+
+    <TextView
+        android:id="@+id/uart_stop_bits_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/card_bg_material_shadow"
+        android:hint="Stop bits (1 by default)"
+        android:padding="10dp"
+        app:drawableEndCompat="@drawable/ic_arrow_down"
+        app:drawableTint="#5A5A5A" />
+
+    <TextView
+        android:id="@+id/uart_flow_control_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/card_bg_material_shadow"
+        android:hint="Flow control (OFF by default)"
+        android:padding="10dp"
+        app:drawableEndCompat="@drawable/ic_arrow_down"
+        app:drawableTint="#5A5A5A" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/uart_config_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:text="close"
+            android:textColor="@color/light_red" />
+
+        <Button
+            android:id="@+id/uart_config_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:text="connect"
+            android:textColor="@color/app_color" />
+    </LinearLayout>
+
+</LinearLayout>

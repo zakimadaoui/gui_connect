@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Joystick">
+        <attr name="JoystickColor" format="color"/>
+        <attr name="ballColor" format="color"/>
+        <attr name="outerCircleThickness" format="dimension"/>
+        <attr name="ballRadius" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="GCP_theme_attrs">
+        <attr name="backgroundVariant" format="color"/>
+        <attr name="backgroundVariant2" format="color"/>
+        <attr name="gcpCardColor" format="color"/>
+        <attr name="gcpCardColorVariant" format="color"/>
+    </declare-styleable>
+</resources>
